@@ -7,8 +7,6 @@ import {Suspense} from "react";
 import {CardsSkeleton, LatestInvoicesSkeleton, RevenueChartSkeleton} from "@/app/ui/skeletons";
 
 export default async function Page() {
-	const {totalPaidInvoices,totalPendingInvoices,numberOfInvoices,numberOfCustomers} = await fetchCardData()
-
 
 	return (
 		<main>
